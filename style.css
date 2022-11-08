@@ -1,0 +1,122 @@
+:root {
+	--col-primary-100: hsl(0, 0%, 100%);
+	--col-primary-300: hsl(212, 45%, 89%);
+	--col-neutral-400: hsl(220, 15%, 55%);
+	--col-neutral-700: hsl(218, 44%, 22%);
+
+	--ff-primary: 'Outfit', sans-serif;
+	--ff-header: var(--ff-primary);
+	--ff-body: var(--ff-primary);
+
+	--fw-regular: 400;
+	--fw-bold: 700;
+
+	--fs-p: 0.9375rem;
+	--fs-h3: 1.375rem;
+}
+
+main {
+	background-color: var(--col-primary-300);
+	padding: 0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	background-color: var(--col-primary-100);
+	height: auto;
+	width: 340px;
+	padding: 1rem;
+	border-radius: 25px;
+	box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
+	max-width: 375px;
+}
+
+.image {
+	border-radius: 15px;
+}
+
+.text {
+	margin: var(--fs-h3);
+}
+
+.h3 {
+	font-family: var(--ff-header);
+	font-size: var(--fs-h3);
+	font-weight: var(--fw-bold);
+	color: var(--col-neutral-700);
+	text-align: center;
+	margin-bottom: var(--fs-p);
+}
+
+.description {
+	text-align: center;
+	font-family: var(--ff-body);
+	font-size: var(--fs-p);
+	font-weight: var(--fw-regular);
+	color: var(--col-neutral-400);
+}
+
+.footer {
+	font-size: 11px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 1rem auto;
+}
+
+.footer a {
+	color: hsl(228, 45%, 44%);
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+#root,
+#__next {
+	isolation: isolate;
+}
