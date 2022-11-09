@@ -15,7 +15,7 @@
 	--fs-h1: 1.375rem;
 }
 
-main {
+body {
 	background-color: var(--col-primary-300);
 	padding: 0;
 	height: 100%;
@@ -26,8 +26,7 @@ main {
 
 .card {
 	background-color: var(--col-primary-100);
-	height: auto;
-	width: 340px;
+	max-width: 340px;
 	padding: 1rem;
 	border-radius: 25px;
 	box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
